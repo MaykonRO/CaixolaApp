@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* barra superior */
+
+.faixa-superior{
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    margin-top: 10px;
+    padding: 0 5px 0 5px;
+}
+
+.search-bar{
+    font-size: 28pt;
+    width: 100%;
+    height: auto;
+}
+
+
+.faixa-superior .img-btn{
+    width: auto;
+    height: 44px;
+}
+
+
+/* menu hamburguer */
+#menu {
+  display: none;
+}
+#menu-button{
+    font-size: 27pt;
+    background-color: rgba(255, 255, 255, 0);
+}
+.sem-fundo{
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 27pt;
+}
+
+/* barra inferior */
+.StBtn{
+    background-color: rgba(239, 239, 239, 0);
+    width: 100px;
+    height: 44px;
+}
+
+
+.DownBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    height: min-content;
+}
+
+.img-btn{
+    width: 44px;
+}
+
+
+/* lidando com o container */
+.main-container{
+    height: 100vh;
+    width: auto;
+    
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: repeat(12,1fr);
+
+}
+
+.Pos-Down{
+    grid-row-start: 11;
+    grid-row-end: 12;
+}
+
+/* classes genericas */
+
+.inline{
+    display: flex;
+    flex-direction: row;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+}
