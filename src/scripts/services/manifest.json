@@ -3,7 +3,7 @@
   "short_name": "Caixola",
   "description": "PWA simplao",
   "id": "caixola",
-  "start_url": "/index.html",
+  "start_url": "/CaixolaApp/index.html",
   "display": "fullscreen",
   "icons": [
     {
