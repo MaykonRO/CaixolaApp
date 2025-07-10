@@ -13,11 +13,11 @@ const createDB = () => {
 
         //requisição para falar algo caso de um sucesso ou um erro
         request.onerror = (event) => {
-            console.log(event);
+            console.log("[Error]: ", event);
         }
 
         request.onsuccess = (event) =>{
-            console.log(event, db);
+            console.log("Sucess: ", event, db);
         }
 
         //requisição de atualizar o db

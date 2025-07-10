@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="manifest" href="../js/manifest.json">
+    <link rel="stylesheet" href="../CaixolaApp/src/styles/style.css">
+    <link rel="manifest" href="../CaixolaApp/src/scripts/services/manifest.json">
 </head>
 
 <body>
@@ -31,24 +31,27 @@
         <div class="cards">
 
         </div>
+
+        <!-- inicio da downBar -->
         <div class="DownBar Pos-Down">
             <div class="cx-botao-bar-inf">
-                <button type="button" class="StBtn" onclick="location.href='costumer.html'"> <img
-                        src="../assets/mug-hot-solid.svg" alt="" srcset="" class="img-btn" /> </button>
+                <button type="button" class="StBtn" onclick="location.href='../CaixolaApp/src/pages/costumer.html'"> <img
+                        src="../CaixolaApp/src/assets/img/mug-hot-solid.svg" alt="" srcset="" class="img-btn" /> </button>
             </div>
             <div class="cx-botao-bar-inf">
-                <button type="button" class="StBtn" onclick="location.href='index.html'"> <img
-                        src="../assets/house-solid.svg" alt="" srcset="" class="img-btn" /> </button>
+                <button type="button" class="StBtn" onclick="location.href='../CaixolaApp/index.html'"> <img
+                        src="../CaixolaApp/src/assets/img/house-solid.svg" alt="" srcset="" class="img-btn" /> </button>
             </div>
             <div class="cx-botao-bar-inf">
-                <button type="button" class="StBtn"> <img src="../assets/user-plus-solid.svg" alt="" srcset=""
+                <button type="button" class="StBtn" onclick="location.href='../CaixolaApp/src/pages/cadastrar.client.html'"> <img src="../CaixolaApp/src/assets/img/user-plus-solid.svg" alt="" srcset=""
                         class="img-btn" /> </button>
             </div>
         </div> <!-- fim da downBar-->
     </div> <!-- Fim do main container -->
 
-    <script src="../model/conection.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../CaixolaApp/src/scripts/main.js"></script>
+    <script src="../CaixolaApp/src/scripts/connection/conection.js"></script>
+    <script src="../CaixolaApp/src/scripts/services/serviceworker.js"></script>
 </body>
 
 </html>

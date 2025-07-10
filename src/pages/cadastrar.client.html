@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- parte superior | header -->
+        <div class="faixa-superior">
+            <div class="inline">
+                <button type="button" class="StBtn" onclick="location.href='../../index.html'"> <img
+                        src="../assets/img/less-than-solid.svg" alt="" srcset="" class="img-btn" /> </button>
+                <div class="center">
+                    <h1> Cadastro do Cliente </h1>
+                </div>
+            </div>
+        </div>
+        <!-- fim do header -->
+
+        <!-- inicio do form -->
+        <div class="form-client">
+            <form action="" method="post">
+                <div>
+                    <label for="nomeInput">Nome do Cliente</label>
+                    <input type="text" name="nome" id="nomeInput" />
+                </div>
+
+                <div>
+                    <label for="celularInput">Celular</label>
+                    <input type="text" name="celular" id="celularInput"  minlength="10" maxlength="12" />
+                </div>
+
+                <!-- estava aprendendo a criar mascaras usando js, por enquanto so conseui aplicar o limpar input no viacep.js
+                https://www.youtube.com/watch?v=_48xrxvQIQc -> video que explica como usar assicronidade
+                https://www.youtube.com/watch?v=e2Em3_09mrw&list=PLmIA3VZysEqQCi5xOJJDb5QIYgHwPhf_D&index=40 -> usando o indexdb pra criar os bglhs
+                https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l -> autoexplicativo n?
+
+                -->
+
+                <div>
+                    <label for="cepClientInput">CEP</label>
+                    <input type="num" name="cepClient" id="cepClientInput"  />
+                </div>
+
+                <div>
+                    <label for="numClientInput">Número</label>
+                    <input type="tel" name="numClient" id="numClientInput" />
+                </div>
+
+                <div>
+                    <label for="bairroClientInput">Bairro</label>
+                    <input type="text" name="bairroClient" id="bairroClientInput" />
+                </div>
+
+                <div>
+                    <label for="cidaClientInput">Cidade</label>
+                    <input type="text" name="cidaClient" id="cidaClientInput" />
+                </div>
+
+                <div>
+                    <label for="estadoClientInput">Estado</label>
+                    <input type="text" name="estadoClient" id="estadoClientInput" />
+                </div>
+
+                <div>
+                    <input type="submit" value="Cadastrar" />
+                </div>
+            </form>
+        </div>
+        <!-- fim do form -->
+
+        <!-- inicio downbar -->
+       <div class="DownBar Pos-Down">
+            <div class="cx-botao-bar-inf">
+                <button type="button" class="StBtn" onclick="location.href='costumer.html'"> <img
+                        src="../assets/img/mug-hot-solid.svg" alt="" srcset="" class="img-btn" /> </button>
+            </div>
+            <div class="cx-botao-bar-inf">
+                <button type="button" class="StBtn" onclick="location.href='../../index.html'"> <img
+                        src="../assets/img/house-solid.svg" alt="" srcset="" class="img-btn" /> </button>
+            </div>
+            <div class="cx-botao-bar-inf">
+                <button type="button" class="StBtn" onclick="location.href='cadastrar.client.html'"> <img src="../assets/img/user-plus-solid.svg" alt="" srcset=""
+                        class="img-btn" /> </button>
+            </div>
+        </div> <!-- fim da downBar-->
+        </div> <!-- fim da downBar-->
+        <!-- fim da downBar-->
+        <script src="../scripts/main.js"></script>
+        <script src="../scripts/connection/conection.js"></script>
+        <script src="../scripts/services/serviceworker.js"></script>
+        <script src="../scripts/services/viacep.js"></script>
+</body>
+
+</html>
