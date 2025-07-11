@@ -5,7 +5,7 @@ function mascaras(mascaraInput){
     let valorInput = document.getElementById(`${mascaraInput}Input`).value;
 
     const maskTemplates = {
-        cel: valorInput.replace(/[^\d]/g, "").replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, "($1) $2 $3-$4")
+        cel: valorInput.replace(/[^\d]/g, "").replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3")
     };
     if (valorInput.length === tamanhoInput) {
         (document.getElementById(`${mascaraInput}Input`).value = maskTemplates[mascaraInput])
