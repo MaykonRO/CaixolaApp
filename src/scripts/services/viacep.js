@@ -1,4 +1,4 @@
-const cep = document.getElementById("cepClientInput");
+/*const cep = document.getElementById("cepClientInput");
 
 const soNumero = (numero) => {
     let valor = /^[0-9]+$/.test(numero);
@@ -8,4 +8,4 @@ const soNumero = (numero) => {
 
 cep.addEventListener("input", () => {
     soNumero(cep.value);
-});
+});*/
