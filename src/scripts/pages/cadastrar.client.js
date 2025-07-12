@@ -12,7 +12,7 @@ function mascaras(mascaraInput){
     }
 };
 
-window.mascaras = mascaras;
+
 /* obs:
 o `${}` serve para concatenar os bglhs
 Input fala que é pra pegar daquele input
