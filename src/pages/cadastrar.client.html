@@ -33,7 +33,7 @@
 
                 <div>
                     <label for="celularInput">Celular</label>
-                    <input type="text" name="celular" id="celInput" maxlength="11"oninput="mascaras('cel')" />
+                    <input type="tel" name="celular" id="celInput" maxlength="11"oninput="mascaras('cel')" />
                 </div>
 
                 <!-- estava aprendendo a criar mascaras usando js, por enquanto so conseui aplicar o limpar input no viacep.js
@@ -45,7 +45,7 @@
 
                 <div>
                     <label for="cepClientInput">CEP</label>
-                    <input type="num" name="cepClient" id="cepClientInput"  />
+                    <input type="num" name="cepClient" id="cepClientInput" maxlength="8" oninput="mascaraCep('cep')" />
                 </div>
 
                 <div>
