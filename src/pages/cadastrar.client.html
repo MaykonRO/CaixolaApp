@@ -36,13 +36,6 @@
                     <input type="tel" name="celular" id="celInput" maxlength="11"oninput="mascaras('cel')" />
                 </div>
 
-                <!-- estava aprendendo a criar mascaras usando js, por enquanto so conseui aplicar o limpar input no viacep.js
-                https://www.youtube.com/watch?v=_48xrxvQIQc -> video que explica como usar assicronidade
-                https://www.youtube.com/watch?v=e2Em3_09mrw&list=PLmIA3VZysEqQCi5xOJJDb5QIYgHwPhf_D&index=40 -> usando o indexdb pra criar os bglhs
-                https://dev.to/laurolyra/adicionando-mascaras-nos-inputs-html-js-vanilla-5f1l -> autoexplicativo n?
-
-                -->
-
                 <div>
                     <label for="cepClientInput">CEP</label>
                     <input type="num" name="cepClient" id="cepClientInput" maxlength="8" oninput="mascaraCep('cep')" />
@@ -97,11 +90,11 @@
         </div> <!-- fim da downBar-->
         </div> <!-- fim da downBar-->
         <!-- fim da downBar-->
-        <script src="../scripts/main.js"></script>
-        <script src="../scripts/connection/conection.js"></script>
+        <!-- <script type="module" src="../scripts/connection/conection.js"></script> -->
         <script src="../scripts/services/serviceworker.js"></script>
         <script src="../scripts/services/viacep.js"></script>
         <script src="../scripts/pages/cadastrar.client.js"></script>
+        <script type="module" src="../scripts/services/operations.client.js"></script>
 
 </body>
 

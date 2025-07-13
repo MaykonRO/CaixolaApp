@@ -80,7 +80,7 @@ const pesquisarCep = async () => {
         }
     }
 
-    console.log(estado.attributes);
+    // console.log(estado.attributes);
 };
 
 //vai ouvir o cep pra pegar o numero ne

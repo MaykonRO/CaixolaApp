@@ -1,12 +1,13 @@
 // Abrindo a db
-let outDB;
 let db;
 
 const DbName = 'db_searchLocal',
     versionDB = 1;
 
+export {DbName , versionDB, db};
 
-const createDB = () => {
+
+export const createDB = () => {
     if(window.indexedDB){
         const request = window.indexedDB.open(DbName, versionDB);
 
